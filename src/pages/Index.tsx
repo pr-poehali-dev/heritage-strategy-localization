@@ -125,9 +125,222 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="font-heading text-5xl font-bold text-center mb-4 text-foreground">
+            Галерея достижений
+          </h2>
+          <p className="text-center text-muted-foreground text-lg mb-16 max-w-2xl mx-auto">
+            Моменты триумфа и легендарные победы
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
+            <div className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer">
+              <img 
+                src="https://cdn.poehali.dev/projects/3ba8b27d-028a-47d2-92c0-1b5f466fcb5c/files/d5e2e612-c8c1-405d-aadc-389f86f2386e.jpg"
+                alt="Олимпийские медали"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="font-heading text-2xl font-bold text-white mb-2">Олимпийское золото</h3>
+                  <p className="text-white/90">Пекин 2008, Афины 2004</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer">
+              <img 
+                src="https://cdn.poehali.dev/projects/3ba8b27d-028a-47d2-92c0-1b5f466fcb5c/files/cf10bf28-8656-48c3-9962-cf777a9a3f24.jpg"
+                alt="Прыжок с шестом"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="font-heading text-2xl font-bold text-white mb-2">Мировой рекорд</h3>
+                  <p className="text-white/90">5.06 метра — абсолютный рекорд</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer">
+              <img 
+                src="https://cdn.poehali.dev/projects/3ba8b27d-028a-47d2-92c0-1b5f466fcb5c/files/0127e256-ecfd-4fa2-9c56-4993ad11cda5.jpg"
+                alt="Победа"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="font-heading text-2xl font-bold text-white mb-2">Триумф</h3>
+                  <p className="text-white/90">Чемпионка мира 2005, 2007, 2013</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer bg-muted/30 flex items-center justify-center">
+              <div className="text-center p-6">
+                <Icon name="Image" size={48} className="text-primary mx-auto mb-4" />
+                <h3 className="font-heading text-xl font-bold mb-2">Международная федерация</h3>
+                <p className="text-muted-foreground text-sm">Работа в IAAF и МОК</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer bg-muted/30 flex items-center justify-center">
+              <div className="text-center p-6">
+                <Icon name="Users" size={48} className="text-primary mx-auto mb-4" />
+                <h3 className="font-heading text-xl font-bold mb-2">Работа с молодежью</h3>
+                <p className="text-muted-foreground text-sm">Мастер-классы и тренировки</p>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-lg aspect-square cursor-pointer bg-muted/30 flex items-center justify-center">
+              <div className="text-center p-6">
+                <Icon name="Heart" size={48} className="text-primary mx-auto mb-4" />
+                <h3 className="font-heading text-xl font-bold mb-2">Благотворительность</h3>
+                <p className="text-muted-foreground text-sm">Поддержка детского спорта</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Button variant="outline" size="lg" className="font-heading">
+              <Icon name="Grid" size={20} className="mr-2" />
+              Смотреть всю галерею
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-[#2D2D2D] text-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-heading text-5xl font-bold text-center mb-16">
+          <h2 className="font-heading text-5xl font-bold text-center mb-6">
+            Видео
+          </h2>
+          <p className="text-center text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
+            Сторис, подкасты и автобиографический фильм
+          </p>
+
+          <div className="space-y-16 max-w-6xl mx-auto">
+            <div>
+              <div className="flex items-center justify-between mb-8">
+                <h3 className="font-heading text-3xl font-bold">Сторис</h3>
+                <Button variant="ghost" className="text-primary hover:text-primary/80">
+                  Смотреть все
+                  <Icon name="ArrowRight" size={20} className="ml-2" />
+                </Button>
+              </div>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {[1, 2, 3, 4, 5, 6].map((i) => (
+                  <div key={i} className="group relative aspect-[9/16] bg-white/10 rounded-lg overflow-hidden cursor-pointer">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2 group-hover:bg-primary/40 transition-colors">
+                          <Icon name="Play" size={32} className="text-white" />
+                        </div>
+                        <p className="text-xs text-gray-400">Сторис {i}</p>
+                      </div>
+                    </div>
+                    <div className="absolute top-3 left-3">
+                      <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                        {i}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h3 className="font-heading text-3xl font-bold mb-2">Подкасты</h3>
+                  <p className="text-gray-400">Беседы с приглашенными гостями</p>
+                </div>
+                <Button variant="ghost" className="text-primary hover:text-primary/80">
+                  Все выпуски
+                  <Icon name="ArrowRight" size={20} className="ml-2" />
+                </Button>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {[
+                  { title: "Скоро: Первый выпуск", guest: "Специальный гость", duration: "45 мин" },
+                  { title: "Скоро: О спорте и жизни", guest: "Олимпийский чемпион", duration: "60 мин" }
+                ].map((podcast, i) => (
+                  <Card key={i} className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors cursor-pointer">
+                    <div className="p-6 flex items-start space-x-4">
+                      <div className="w-24 h-24 bg-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon name="Mic" size={40} className="text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-heading text-xl font-bold mb-2">{podcast.title}</h4>
+                        <p className="text-gray-400 mb-3">{podcast.guest}</p>
+                        <div className="flex items-center space-x-4 text-sm text-gray-500">
+                          <span className="flex items-center">
+                            <Icon name="Clock" size={16} className="mr-1" />
+                            {podcast.duration}
+                          </span>
+                          <span className="flex items-center">
+                            <Icon name="Calendar" size={16} className="mr-1" />
+                            Скоро
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-heading text-3xl font-bold mb-2">Автобиографический фильм</h3>
+              <p className="text-gray-400 mb-8">5 минут истории побед и вызовов</p>
+
+              <div className="relative aspect-video bg-white/5 rounded-xl overflow-hidden group cursor-pointer">
+                <img 
+                  src="https://cdn.poehali.dev/projects/3ba8b27d-028a-47d2-92c0-1b5f466fcb5c/files/83398a07-aa68-4032-8348-df8c54ae94a2.jpg"
+                  alt="Автобиографический фильм"
+                  className="w-full h-full object-cover opacity-50"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Icon name="Play" size={48} className="text-white ml-1" />
+                  </div>
+                </div>
+
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <h4 className="font-heading text-3xl font-bold mb-3">Моя история</h4>
+                  <p className="text-gray-300 text-lg mb-4">
+                    От первых шагов в спорте до олимпийского триумфа. 
+                    История о том, как мечта становится реальностью.
+                  </p>
+                  <div className="flex items-center space-x-6 text-sm text-gray-400">
+                    <span className="flex items-center">
+                      <Icon name="Clock" size={16} className="mr-2" />
+                      5:32
+                    </span>
+                    <span className="flex items-center">
+                      <Icon name="Eye" size={16} className="mr-2" />
+                      Премьера
+                    </span>
+                    <span className="flex items-center">
+                      <Icon name="Calendar" size={16} className="mr-2" />
+                      2026
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="font-heading text-5xl font-bold text-center mb-16 text-foreground">
             Официальный статус
           </h2>
           
